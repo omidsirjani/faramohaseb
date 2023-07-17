@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./plugins/jquery-2.1.4.min.js"></script>
+
+    <!-- Step Form Wizard plugin -->
+    <link rel="stylesheet" href="./step-form-wizard/css/step-form-wizard-all.css" type="text/css" media="screen, projection">
+    <script src="./step-form-wizard/js/step-form-wizard.js"></script>
+
+    <!-- nicer scroll in steps -->
+    <link rel="stylesheet" href="./plugins/mcustom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <script src="./plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	
+
+<script src="./plugins/swal/sweetalert2.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.css">
+    <link href="./assets/css/avatar.min.css" rel="stylesheet">
+    
+    <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/regular.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/v4-shims.min.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <title>فرامحاسب</title>
+</head>
+
+    <Main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form id="wizard_example" action="">
+                        <fieldset>
+                            <legend>انتخاب بسته نرم افزاری</legend>
+                                <div class="card-items">
+                                    <div class="card-item Active" id="card-0">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزار حسابداری بازرگانی</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">امکانات</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-item" id="card-1">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزار حسابداری شرکتی</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">انتخاب</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-item" id="card-2">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزار حسابداری تولیدی</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">انتخاب</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-item" id="card-3">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزارحسابداری پیمانکاری</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">انتخاب</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-item" id="card-4">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزار حسابداری رستورانی</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">انتخاب</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-item" id="card-5">
+                                        <div class="card-item-head">
+                                            <img class="card-item-img" src="./images/quality.png" alt="">
+                                        </div>
+                                        <div class="card-item-title">نرم افزار پخش مویرگی</div>
+                                        <div class="card-item-contant">
+                                            
+                                        </div>
+                                        <div class="card-itme-footer">
+                                            <a type="button" class="card-itme-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">انتخاب</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards-footer">
+                                    <p class="cards-footer-text" id="info_product">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aliquid qui quam adipisci laudantium dolor! Minus at officiis quas quos veniam debitis quia cum possimus? Ad eos inventore nemo voluptates?
+                                    </p>
+                                </div>
+                               
+                        </fieldset>
+                        <fieldset>
+                            <legend>امکانات جانبی</legend>
+                            
+                            <div class="user-plan">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim quod dolorum nihil vero ad? Voluptatem ab, quae distinctio labore officia expedita cum fugit. Tempore illo consequuntur quia rem. Provident.
+    
+                                </p>
+                               <div class="row">
+                                <div class="col-sm-6">
+                                  <label for="input-user-count" class="form-label">تعداد کاربر</label>
+                                  <input type="number"
+                                        min="1"
+                                        value="1"
+                                    class="form-control" name="input-user-count" id="input-user-count" aria-describedby="helpId" placeholder="">
+                                  <small id="helpId" class="form-text text-muted">تعداد کاربر</small>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="input-devic-count" class="form-label">تعداد سیستم</label>
+                                    <input type="number"
+                                            min="1"
+                                            value="1"
+                                      class="form-control" name="input-devic-count" id="input-devic-count" aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">تعداد سیستم</small>
+                                  </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </fieldset> 
+                        <fieldset>
+                            <legend>انتخاب زیر سیستم ها</legend>
+                            <p style="color:blue;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, corrupti?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim quod dolorum nihil vero ad? Voluptatem ab, quae distinctio labore officia expedita cum fugit. Tempore illo consequuntur quia rem. Provident.
+
+                            </p>
+
+                            <div class="sub-system-items">
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="sub-system-item">
+                                    <div class="blur"></div>
+                                    <div class="sub-system-item__header">
+                                       <img class="sub-system-item__icon" src="./images/bank/meli.png" alt="">
+                                    </div>
+                                    <div class="sub-system-item__contant">
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined">پیامک رسان</label>
+                                    </div>
+                                    <div class="sub-system-item__footer">
+                                        <div class="sub-system-item__price">250,000 
+                                            <small class="sub-system-item__unit">تومان</small>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+
+                            </div>
+                            
+                            
+                        </fieldset>
+                        <fieldset>
+                            <legend>پرداخت</legend>
+                            <div class="row">
+                                <div class="col sm-12 md-6" id="client-info">
+                                    <h4 id="client-info-title">اطلاعات پرداخت خودتان را وارد کنید</h4>
+                                    <p id="client-info-text">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و 
+                                    </p>
+                                    <div class="client-info-form">
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-fname">نام</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="client-info-fname" aria-describedby="client-info-fname">
+                                        </div>
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-lname">نام خانوادگی</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="client-info-lname" aria-describedby="client-info-lname">
+                                        </div>
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-mobile">تلفن همراه</span>
+                                            <input type="tel" class="form-control" 
+                                                    placeholder="" 
+                                                    aria-label="client-info-mobile"  
+                                                    aria-describedby="client-info-mobile"
+                                                    pattern="[0]{1}[0-9]{10}">
+                                        </div>
+
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-state">استان</span>
+                                            <select class="form-select"  aria-describedby="client-info-state">
+                                                <option selected>انتخاب کنید</option>
+                                                <option value="1">خراسان رضوی</option>
+                                                <option value="2">خراسان جنوبی</option>
+                                                <option value="3">خراسان شمالی</option>
+                                                <option value="4">تهران</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-city">شهر</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="client-info-city" aria-describedby="client-info-city">
+                                        </div>
+
+                                        <div class="input-group flex-nowrap mb-2">
+                                            <span class="client-info-lable input-group-text" id="client-info-address">آدرس</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="client-info-address" aria-describedby="client-info-address">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                <div class="col sm-12 md-6" id="client-buy">
+                                    <div class="client-buy-header">
+                                        خلاصه امکانات خریداری شده
+                                       <table class="client-buy-table table table-bordered">
+                                            <tr>
+                                                <td>قیمت</td>
+                                                <td>15،000،000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>هزینه امکانات جانبی</td>
+                                                <td>1،000،000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>هزینه زیرسیستم ها</td>
+                                                <td>1،500،000</td>
+                                            </tr>
+                                            <tr class="bg-primary text-light">
+                                                <td>جمع کل</td>
+                                                <td>17،500،000</td>
+                                            </tr>
+                                       </table>
+                                    </div>
+                                    <div class="client-buy-contant">
+                                        <a class="bank-logo" href="#client-buy">
+                                            <img class="bank-logo-icon" src="./images/bank/meli.png" alt="بانک ملی">
+                                        </a>
+                                        <a class="bank-logo" href="#client-buy">
+                                            <img class="bank-logo-icon" src="./images/bank/melat.png" alt="بانک ملی">
+                                        </a>
+                                    </div>
+                                    <div class="client-buy-footer">
+                                        <button class="btn_payment btn btn-primary" id="btn_payment" onclick="myfunc();" >پرداخت</button>
+                                    </div>
+                                    
+                                    
+                                    
+                                   
+                                </div>
+                                
+                                <noscript>
+                                    <input class="nocsript-finish-btn sf-right nocsript-sf-btn" type="submit"
+                                        name="no-js-clicked" value="finish"/>
+                                </noscript>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="form-footer">
+                        <h2 class="text-center">شرح امکانات</h2>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                بازرگانی سطح 1
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                تعريـف اشـخاص- تعريـف کالا- تعريـف بانـک شرکت- تعريـف واحـد-  تعریف بانک اشخاص – تعريـف درآمـد و هزينـه- چـک پرداختـي اول دوره- چـک دريافتـي اول دوره- تعريـف کاربـران- تعیین سطوح ساده دسترسی کاربران ( انتخاب فرم های در درسترس کاربر) – کالاي اول دوره- فاکتـور فـروش- برگشـت از فـروش- فاکتـور خريـد- برگشـت از خريـد- دريافـت- پرداخـت- چـک دريافتـي- چـک پرداختـي -فهرسـت دريافـت- فهرسـت پرداخـت- فهرسـت فاکتورهـا- پيـش فاکتـور- سـند افتتاحيـه- گـردش حسـاب – مانــده حســاب- کاردکــس تعدادی کالا- مانــده کالا- شــيفت کاري- تنظيمــات- ماشــين حســاب- دفترچــه تلفــن- دفترچــه يادداشــت- بازگردانــي پشــتيبان- تنظيــم پوســته- دسترســی ســریع فــرم- پشــتيباني- بروزرســانی- شــرح اســتاندارد- رویدادهــا- مالیــات بــر ارزش افــزوده- کاردکــس ریالــی- چــاپ اقــلام فاکتــور- ریــز گــردش حســاب- فاکتــور خدمــات- تســویه نقــدی اتومــات- نمایــش اطلاعــات مشـتری در فاکتـور- حداقـل موجـودی کالا- کرایـه حمـل- تعریـف کاربـران- تخفیـف درصدی و مبلغی در کل فاکتور – تخفیف درصدی و مبلغی در سطر فاکتور- خروجـی اکسـل- خروجـی گزارشـات فصلـی- لیست قیمت ساده
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        بازرگانی سطح 2
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        تعريــف نامحدود انبــار- تعريــف نامحدود صنــدوق- تعیین ســطوح پیشرفته دسترســی کاربران (دسترسی ویرایش تخفیف ، شماره ، تاریخ ، ویرایش مشتری پیش فرض ، نمایش قیمت خرید و سود در فاکتور به کاربر ) – انتقــال حســاب- حوالــه انبــار- فاکتــور ســفارش خريــد- ســود لحظـه اي کالا (نمایش ریز قیمت تمام شده و سود به صورت ناخالص و خالص با احتساب کرایه و تخفیفات خرید و فروش )- ليسـت ورود کالا- ليسـت خـروج کالا- گزارشات پیشرفته کالا (تجمیعی ، گروهی ، خالص با مرجوعی) – گزارشـات نمـوداري درآمد ها ، هزینه ها ، فروش و سود- گـزارش سـريال کالا- گزارشـات آمـاری (نمایش کالا های پر فروش ، کالاهای با بیشترین سود ، نمایش مشتری ها با ترتیب بیشترین خرید و سود)- تعريـف دسـته چـک- دفترچـه اقسـاط- کنتـرل شـماره چـک- کالای دو واحـدی – واحد ثابت و متغیر کالا- کالاهـای بارکـدی – امکان چند بارکدی یک کالا- لیسـت سـیاه مشـتریان- طراحـی فـرم چـاپ- تسـویه اتومـات و اتصـال بـه دستگاه کارتخـوان- نحـوه محاسـبه قیمـت تمـام شـده (خالص یا ناخالص)- بارکـد وزنـی – گزارش وقایع کاربران- تخفیــف شــرطی- آلارم تاریــخ سررســید فاکتور- ثبــت راننــده- ثبــت حــق العمــلکار- تخفیــف گروهــی- چــاپ اتیکــت- محاسبه مجدد قیمت تمام شده فاکتور ها- انبارگردانی- سریال بازه ای- لیست قیمت پیشرفته – چــاپ چــک-راس گیری چک – حذف گروهی فاکتورها – حواله مصرف – فهرست حواله مصرف – تراز نامه – صورت سود و زیان
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                        بازرگانی پیشرفته
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        سیستم بازاریابی – سطوح قیمتی کالا تا 8 سطح ، سطوح تخفیف کالا تا 8 سطح – گــزارش پیشرفته فاکتــور- چــاپ بارکــد- خدمــات گارانتــي- تعريــف شــرايط گارانتــي- تعريـف شـعبه- طبقـه بنـدی گـروه کالا تـا ۵ سطر- ارتبــاط بــا تــرازو
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                        بازرگانی حرفه ای
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        انتقــال از اکســل- پیامــک رســان- حقوق دستمزد فروشگاهی ( ثبــت ورود و خــروج- فیــش حقوقــی- لیســت فیش حقوقی) – ارسال خودکار پیامک در فاکتور و دریافت – برگشت حواله مصرف – تخفیف پلکانی – فروش پلکانی – گروه بندی 5 سطح کالا
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                        عملیات حسابداری
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        کدهـاي حسـابداری – سند اختتامیه – دفتر کل ، معین و تفصیلی – تراز آزمایشی (2،4و6 ستونی) – نمایش دفاتر قانونی
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                        مالی تکمیلی
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        سند حسابداری دستی – فهرست اسناد – جستجو در جزئیات اسناد – بایگانی ضمایم اسناد – حذف گروهی اسناد – کپی سند – تجمیع سند های حسابداری بصورت روزانه هفتگی و ماهانه – حواله مصرف – برگشت حواله مصرف
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading7">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                        مالی شرکتی
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        ﺳﯿﺴﺘﻢ ﮐﺪﯾﻨﮓ ﺷﻨﺎور – گزارشات پیشرفته مالی – کاربرگ – نمایش دفاتر قانونی – تجمیع سندهای حسابداری بصورت هفتگی و ماهانه
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading8">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8">
+                                        امکانات جامع
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        کدهـاي حسـابداری – سند اختتامیه – دفتر کل ، معین و تفصیلی – تراز آزمایشی (2،4و6 ستونی) – نمایش دفاتر قانونی
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading9">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapse9">
+                                        عملیات حسابداری
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        رسید انبار – حواله خروج – برگشت رسید انبار – برگشت حواله خروج – گزارشات جامع مالی
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading10">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+                                       امکانات حرفه ای
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        سیستم حقوق دستمزد شرکتی – ایجاد یک شرکت – دو کلاینت شبکه – سیستم چند ارزی – دارایی ثابت
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Main>
+
+
+    
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+
+</html>
