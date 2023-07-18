@@ -8,7 +8,6 @@ $(document).ready(function () {
         finishBtn: $('<input class="finish-btn sf-left sf-btn" type="submit" value="پايان"/>')
     });
 
-
 })
 $(window).load(function () {
     /* only if you want use mcustom scrollbar */
@@ -18,6 +17,27 @@ $(window).load(function () {
             enable: true
         }
     });
+});
+
+
+const checkBoxs = document.querySelectorAll('.btn-check');
+  
+checkBoxs.forEach(checkbox => {
+  checkbox.addEventListener('change', function handleChange(event) {
+    let lbl = "#LblSubSys-" + (checkbox.id).split("-")[1];
+    console.log(lbl);
+
+    let checkbox_curr = document.querySelector(lbl);
+
+        // If the checkbox is checked, display the output text
+        if (checkbox.checked == true){
+            checkbox_curr.classList.add("Active");
+            checkbox_curr.innerHTML='<i class="fa fa-check" aria-hidden="true"></i>';
+          } else {
+            checkbox_curr.classList.remove("Active");
+            checkbox_curr.innerHTML="";
+          }
+  });
 });
 
 const boxes = document.querySelectorAll('.card-item');
@@ -68,3 +88,11 @@ function show_info(id){
     document.querySelector("#info_product").innerHTML = infoList[i];
     // console.log(e);
 }
+
+
+function payment() {
+
+      alert("به درگاه پرداخت منتقل می شوید")
+
+  }
+
